@@ -31,7 +31,6 @@ exports.config = {
     qa1: [
         'test/specs/a/1qaWolf.spec.js'
        ],
-
     qa2: [
       'test/specs/b/2qaWolf.spec.js'
     ],
