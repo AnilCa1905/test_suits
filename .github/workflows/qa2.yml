@@ -1,4 +1,4 @@
-name: QA-2
+name: Nodejs.CLI
 
 on:
   workflow_dispatch:
