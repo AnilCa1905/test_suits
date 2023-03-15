@@ -18,7 +18,9 @@
         "webdriverio": "^8.5.9"
     },
     "scripts": {
-        "wdio": "wdio run wdio.conf.js"
+        "wdio": "wdio run wdio.conf.js",
+        "qa1" : "wdio run wdio.conf.js --suite qa1",
+        "qa2" : "wdio run wdio.conf.js --suite qa2"
     },
     "dependencies": {
         "allure-commandline": "^2.20.1",
