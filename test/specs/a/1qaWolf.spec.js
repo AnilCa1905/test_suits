@@ -81,8 +81,8 @@ describe("QaWolf.com  ", () => {
     });
     it('user should be able to  select content and caseStudy', async () => {
         await Homepage.content('content');
-        expect(await Homepage.$pageHeader('Case Studies').isDisplayed()).toBe(true, 'Expect caseStudy page header to be displayed');
-      //  await expect(browser).toHaveUrl("https://www.qawolf.com/case-studies");
+       // expect(await Homepage.$pageHeader('Case Studies').isDisplayed()).toBe(true, 'Expect caseStudy page header to be displayed');
+        await expect(browser).toHaveUrl("https://www.qawolf.com/case-studies");
     });
     it('user should be able to  select content and Blog', async () => {
         await Homepage.Blog('content');
