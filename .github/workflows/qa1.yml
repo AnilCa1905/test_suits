@@ -1,4 +1,4 @@
-name: Node.js CI
+name: QA-1
 
 on:
   workflow_dispatch:
