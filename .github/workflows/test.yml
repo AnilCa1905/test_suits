@@ -24,7 +24,7 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build --if-present
-    - name: Run common test configuration
-      run: npm run qa1 
+    - name: Call another workflow
+      uses: ./.github/workflows/main.yml
     - name: Run test2 configuration
       run: npm run qa2
