@@ -2,6 +2,7 @@
 name: TEST
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "master" ]
 
@@ -24,7 +25,11 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Run common test configuration
-      uses: ./main.yml
+      run: |
+        cat test_suits/.github/workflows/main.yml
+        # include any additional steps specific to your workflow
 
     - name: Run test2 configuration
-      uses: ./qa2main.yml
+      run: |
+        cat test_suits/.github/workflows/qa2main.yml
+        # include any additional steps specific to your workflow
