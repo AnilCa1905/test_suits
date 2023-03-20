@@ -25,11 +25,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - name: Run common test configuration
-      run: |
-        cat test_suits/.github/workflows/main.yml
-        # include any additional steps specific to your workflow
-
+      uses: ./.github/workflows/main.yml
     - name: Run test2 configuration
-      run: |
-        cat test_suits/.github/workflows/qa2main.yml
-        # include any additional steps specific to your workflow
+      uses: ./.github/workflows/qa2main.yml
